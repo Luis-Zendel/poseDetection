@@ -1,0 +1,77 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/*.xcuserdatad
+*.xcodeproj/*.xcscmblueprint
+!default.xcworkspace
+!default.xcodeproj
+
+# Build
+build/
+*.ipa
+*.app
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+/.build
+/.swiftpm
+
+# Carthage
+Carthage/Build
+Carthage/Checkouts
+Carthage/Pods
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/*.lock
+
+# Firebase
+google-service-info.plist
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~.*
+
+# Logs
+*.log
+
+# DS_Store files (Mac OS)
+.DS_Store
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Xcode environment
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+
+# Xcode generated schemes
+xcuserdata/
+*.xcscheme
+
+# Package manager locks
+Cartfile.resolved
+Package.resolved
+
+# Archives
+*.xcarchive
+
+# Breakpoint & UserInterfaceState files
+*.breakpoint
+*.bplist
+
+# IDEWorkspaceChecks.plist - This file keeps track of the state of a workspace, like whether certain files are being tracked or ignored. It’s generated automatically and not necessary to be included.
+IDEWorkspaceChecks.plist
