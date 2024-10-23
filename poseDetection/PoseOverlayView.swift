@@ -11,7 +11,7 @@ import MLKitPoseDetectionAccurate
 import MLKitPoseDetectionCommon
 
 
-class PoseOverlay2: UIView {
+class PoseOverlayView: UIView {
     
     var pose: Pose?
     

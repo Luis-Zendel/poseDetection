@@ -6,11 +6,11 @@ import MLKitPoseDetectionCommon
 
 
 
-struct CameraView2: UIViewControllerRepresentable {
+struct CameraView: UIViewControllerRepresentable {
     class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
         var session: AVCaptureSession!
         var poseDetector: PoseDetector!
-        var overlayView: PoseOverlay2!
+        var overlayView: PoseOverlayView!
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -45,7 +45,7 @@ struct CameraView2: UIViewControllerRepresentable {
             let poseDetector = PoseDetector.poseDetector(options: options)
                         
                         // Crear la vista overlay para dibujar los puntos
-            overlayView = PoseOverlay2(frame: view.bounds)
+            overlayView = PoseOverlayView(frame: view.bounds)
                         overlayView.backgroundColor = .clear
                         view.addSubview(overlayView)
 

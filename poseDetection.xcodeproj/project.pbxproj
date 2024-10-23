@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		6FCD1040D8758157793E5942 /* Pods_poseDetection_poseDetectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A89108F209C2D6EE366232 /* Pods_poseDetection_poseDetectionUITests.framework */; };
 		7393068D109B5A8B4715C75F /* Pods_poseDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB67590EC154E8E920CB5A0C /* Pods_poseDetection.framework */; };
-		7A8E18722CC87EEE00D4ED72 /* CamaraView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E18712CC87EEA00D4ED72 /* CamaraView2.swift */; };
-		7A8E18742CC87F5300D4ED72 /* PoseOverlay2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E18732CC87F4C00D4ED72 /* PoseOverlay2.swift */; };
+		7A8E18722CC87EEE00D4ED72 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E18712CC87EEA00D4ED72 /* CameraView.swift */; };
+		7A8E18742CC87F5300D4ED72 /* PoseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E18732CC87F4C00D4ED72 /* PoseOverlayView.swift */; };
 		7A9AB1A42CABD8E900A0CB97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9AB19E2CABD8E900A0CB97 /* Preview Assets.xcassets */; };
 		7A9AB1A52CABD8E900A0CB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9AB1A02CABD8E900A0CB97 /* Assets.xcassets */; };
 		7A9AB1A72CABD8E900A0CB97 /* poseDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9AB1A22CABD8E900A0CB97 /* poseDetectionApp.swift */; };
@@ -41,8 +41,8 @@
 		1E380560E8BD5CB2E64DAD75 /* Pods-poseDetectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-poseDetectionTests.debug.xcconfig"; path = "Target Support Files/Pods-poseDetectionTests/Pods-poseDetectionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44258E7BC9B4ED683D883960 /* Pods_poseDetectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_poseDetectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		473036A241F1B69E3EB2B89C /* Pods-poseDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-poseDetection.release.xcconfig"; path = "Target Support Files/Pods-poseDetection/Pods-poseDetection.release.xcconfig"; sourceTree = "<group>"; };
-		7A8E18712CC87EEA00D4ED72 /* CamaraView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamaraView2.swift; sourceTree = "<group>"; };
-		7A8E18732CC87F4C00D4ED72 /* PoseOverlay2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseOverlay2.swift; sourceTree = "<group>"; };
+		7A8E18712CC87EEA00D4ED72 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		7A8E18732CC87F4C00D4ED72 /* PoseOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseOverlayView.swift; sourceTree = "<group>"; };
 		7A9AB1712CABD87000A0CB97 /* poseDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poseDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9AB1812CABD87100A0CB97 /* poseDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = poseDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9AB18B2CABD87100A0CB97 /* poseDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = poseDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,8 +121,8 @@
 		7A9AB1A32CABD8E900A0CB97 /* poseDetection */ = {
 			isa = PBXGroup;
 			children = (
-				7A8E18732CC87F4C00D4ED72 /* PoseOverlay2.swift */,
-				7A8E18712CC87EEA00D4ED72 /* CamaraView2.swift */,
+				7A8E18732CC87F4C00D4ED72 /* PoseOverlayView.swift */,
+				7A8E18712CC87EEA00D4ED72 /* CameraView.swift */,
 				7A9AB19F2CABD8E900A0CB97 /* Preview Content */,
 				7A9AB1A02CABD8E900A0CB97 /* Assets.xcassets */,
 				7A9AB1A22CABD8E900A0CB97 /* poseDetectionApp.swift */,
@@ -444,8 +444,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A8E18742CC87F5300D4ED72 /* PoseOverlay2.swift in Sources */,
-				7A8E18722CC87EEE00D4ED72 /* CamaraView2.swift in Sources */,
+				7A8E18742CC87F5300D4ED72 /* PoseOverlayView.swift in Sources */,
+				7A8E18722CC87EEE00D4ED72 /* CameraView.swift in Sources */,
 				7A9AB1A72CABD8E900A0CB97 /* poseDetectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
