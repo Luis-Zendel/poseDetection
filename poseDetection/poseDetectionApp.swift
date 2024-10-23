@@ -11,7 +11,7 @@ import SwiftUI
 struct poseDetectionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CameraView2()
         }
     }
 }

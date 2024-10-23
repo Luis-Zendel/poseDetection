@@ -1,17 +1,16 @@
 import SwiftUI
 import AVFoundation
-import Firebase
 import MLKit
 import MLKitPoseDetectionAccurate
 import MLKitPoseDetectionCommon
 
 
 
-struct CameraView: UIViewControllerRepresentable {
+struct CameraView2: UIViewControllerRepresentable {
     class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
         var session: AVCaptureSession!
         var poseDetector: PoseDetector!
-        var overlayView: PoseOverlayView!
+        var overlayView: PoseOverlay2!
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -46,7 +45,7 @@ struct CameraView: UIViewControllerRepresentable {
             let poseDetector = PoseDetector.poseDetector(options: options)
                         
                         // Crear la vista overlay para dibujar los puntos
-                        overlayView = PoseOverlayView(frame: view.bounds)
+            overlayView = PoseOverlay2(frame: view.bounds)
                         overlayView.backgroundColor = .clear
                         view.addSubview(overlayView)
 

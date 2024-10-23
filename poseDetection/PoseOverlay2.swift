@@ -11,7 +11,7 @@ import MLKitPoseDetectionAccurate
 import MLKitPoseDetectionCommon
 
 
-class PoseOverlayView: UIView {
+class PoseOverlay2: UIView {
     
     var pose: Pose?
     
@@ -41,6 +41,6 @@ class PoseOverlayView: UIView {
     func convertLandmarkPositionToView(_ position: Vision3DPoint, viewSize: CGSize) -> CGPoint {
         let x = CGFloat(position.x) / 1000 * viewSize.width
         let y = CGFloat(position.y) / 1000 * viewSize.height
-        return CGPoint(x: x, y: y)
+        return CGPoint(x: y, y: x)
     }
 }
